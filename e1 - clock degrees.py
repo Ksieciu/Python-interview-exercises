@@ -1,3 +1,7 @@
+'''
+Given a time, calculate the angle between the hour and minute hands.
+'''
+
 def clock_diff(hour, minutes):
     if hour >= 12:
         hour -= 12
