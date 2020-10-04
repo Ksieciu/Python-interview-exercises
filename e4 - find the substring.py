@@ -26,11 +26,10 @@ def firstOccurence(s: str, x: str):
         x1_index = s.find(x1, x1_start)
         x2_start = x1_index + len(x1) + 1
         if x1_index < 0:
-            break
+            return -1
         elif s.find(x2, x2_start) == x2_start:
             return x1_index
         x1_start = x2_start
-    return -1
 
 s = input("Lowercase input[a-z]: ")
 x = input("String with one wild-card *: ")
