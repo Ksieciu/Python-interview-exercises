@@ -13,4 +13,7 @@ hour, minutes = time.split(':')
 hour = int(hour)
 minutes = int(minutes)
 
-print(clock_diff(hour, minutes), "degrees")
+if hour >= 24 or minutes >= 60:
+    print("Wrong time input!")
+else:
+    print(clock_diff(hour, minutes), "degrees")
